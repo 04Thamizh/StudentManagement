@@ -24,7 +24,7 @@ public class StudentRecordLinkedList {
 			menu();
 			option = input.nextInt();
 			switch (option) {
-			case 1 -> {
+				case 1 : {
                             System.out.print(
                                     "What is the Student id Number ? ");
                             
@@ -42,20 +42,20 @@ public class StudentRecordLinkedList {
                             hr.add(record);
                             System.out.println(record.toString());
                         }
-			case 2 -> {
+				case 2 : {
                             System.out.print(
                                     "What is the Student id number ? ");
                             int rId = input.nextInt();
                             hr.delete(rId);
                         }
-			case 3 -> {
+				case 3 : {
                             System.out.print(
                                     "What is the Student id number? ");
                             
                             int rIdNo = input.nextInt();
                             hr.update(rIdNo, input);
                         }
-			case 4 -> {
+				case 4 : {
                             System.out.print(
                                     "What is the Student id ? ");
                             int bookId = input.nextInt();
@@ -65,13 +65,13 @@ public class StudentRecordLinkedList {
                                         "Student id does not exist\n");
                             }
                         }
-			case 5 -> hr.display();
-			case 9 -> {
+				case 5 : hr.display();
+				case 9 : {
                             System.out.println(
                                     "\nThank you for using the program. Goodbye!\n");
                             System.exit(0);
                         }
-			default -> System.out.println("\nInvalid input\n");
+			default : System.out.println("\nInvalid input\n");
 			}
 		}
 		while (option != 9);
